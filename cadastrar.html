@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <title>EpicTask</title>
+    <script src="./assets/js/cadastrar.js" defer></script>
+    <title>EpicToon</title>
 </head>
 
 <body>
     <nav>
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo">EpicTask</a>
+        <div class="nav-wrapper black">
+            <a href="#" class="brand-logo">EpicToon</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="/">Tarefas</a></li>
                 <li class="active"><a href="cadastrar.html">Criar Tarefa</a></li>
@@ -24,32 +25,35 @@
 
     </nav>
     <main class="container">
-        <h4>Cadastrar Tarefa </h4>
+        <h4>Cadastrar Desenho </h4>
 
         <div class="row">
             <div class="row">
                 <div class="input-field col s12">
                     <input id="titulo" type="text" class="validate" minLength="3">
-                    <label for="titulo">Título</label>
+                    <label for="titulo">Desenho</label>
                     <span class="helper-text"
                         data-error="Titulo muito curto. Preencha um título com pelo menos 3 caracteres."
-                        data-success="">Digite o título da tarefa</span>
+                        data-success="">Digite o Nome do desenho</span>
                 </div>
             </div>
                 <div class="row">
                 <div class="input-field col s12">
-                    <textarea id="descricao" class="materialize-textarea"></textarea>
+                    <textarea id="descricao" type="text" class="validate materialize-textarea" minlength="10"></textarea>
                     <label for="descricao">Descrição</label>
+                    <span class="helper-text"
+                    data-error="Descrição muito curta. Preencha um título com pelo menos 10 caracteres."
+                    data-success="">Insira uma Descrição</span>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s12">
-                    <input id="pontos" type="number" class="validate" min="1" max="100">
-                    <label for="pontos">Pontos</label>
+                    <input id="pontos" type="number" class="validate" min="1" max="10">
+                    <label for="pontos">Nota</label>
                     <span class="helper-text"
-                        data-error="Pontuação Inválida. Informe um valor entre 1 e 100"
+                        data-error="Nota Inválida. Informe um valor entre 1 e 10"
                         data-success="">
-                        Digite a pontuação da tarefa
+                        Digite a nota do desenho
                     </span>
                 </div>
             </div>
@@ -59,24 +63,14 @@
                     <a href="index.html" class="btn grey"> Cancelar </a>
                 </div>
                 <div class="col">
-                    <a href="index.html" class="btn green"> Salvar </a>
+                    <button id="botao-cadastrar" class="btn green">Salvar</button>  
                 </div>
             </div>
                 
-         </form>
+        </div>
        </div>
     </main>
-
-    <div class="fixed-action-btn">
-        <a href="cadastrar.html" class="btn-floating btn-large red">
-            <i class="large material-icons">add</i>
-        </a>
-
-    </div>
-
-
-
-
+                        
 </body>
 
 </html>
