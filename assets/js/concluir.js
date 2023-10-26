@@ -13,5 +13,4 @@ function concluir(id){
 
     atualizar()
     calcularEstatisticas()
-    atualiazar()
 }
