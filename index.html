@@ -8,58 +8,58 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="/assets/js/carregar.js"></script>
+    <script src="/assets/js/apagar.js" defer></script>
+    <script src="assets/js/concluir.js"></script>
+    <script src="assets/js/dashboard.js" defer></script>
     <title>EpicToon</title>
 </head>
 
 <body>
 
     <nav>
-        <div class="nav-wrapper black" >
+        <div class="nav-wrapper black">
             <a href="#" class="brand-logo">EpicToon</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li class="active"><a href="/">Tarefas</a></li>
-                <li><a href="cadastrar.html">Criar Tarefa</a></li>
+                <li class="active"><a href="/">animações</a></li>
+                <li><a href="cadastrar.html">Criar opinião</a></li>
                 <li><a href="perfil.html">Perfil</a></li>
             </ul>
         </div>
     </nav>
 
     <main class="container">
-        <h4>Lista de Tarefas</h4>
-
-        <div class="row" id="lista-tarefas">
-            <div class="col s12 m6">
-                <div class="card">
-                    <div class="card-content">
-                        <div class="card-image">
-                         <img src="/imagem/love-death-robots-cg.jpg">   
-                         <span class="card-title">Love, robots + death</span>
-                        </div>   
-                        <p>Muito bom mesmo. As reflexões trazidas em cada curta são realmente fantásticas e fazem nos questionar diversos conceitos.
-                             Todos os curtas são para adultos levem a sério a classificação etária . 
-                            Parabéns Netflix adorei os temas ali abordados e a qualidade gráfica é impecável.</p>
-                        <span data-badge-caption="10" class="badge grey white-text">Nota</span>
-                    </div>
-                    <div class="card-action">
-                        <a href="#" class="btn red">
-                            <i class="material-icons"> delete </i>
-                        </a>
-                        <a href="#" class="btn green">
-                            <i class="material-icons"> check </i>
-                        </a>
-                    </div>
+        <div class="row">
+            <div class="col s12 m6 l3">
+                <div class="card-panel center black white-text">
+                    <h3 id="qtde-pendente">0</h3>
+                    <span>opiniões</span>
                 </div>
             </div>
+            <div class="col s12 m6 l3">
+                <div class="card-panel center green white-text">
+                    <h3 id="qtde-concluida">0</h3>
+                    <span>opiniões curtidas</span>
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card-panel center purple white-text">
+                    <h3 id="total-notas">0</h3>
+                    <span>total de notas</span>
+                </div>
+            </div>
+        <h4>Catálogo de animações</h4>
+
+        <div class="row" id="lista-tarefas">
         </div>
     </main>
 
     <div class="fixed-action-btn">
-        <a href= "cadastrar.html" class="btn-floating btn-large red">
-          <i class="large material-icons grey">add</i>
+        <a href="cadastrar.html" class="btn-floating btn-large red">
+            <i class="large material-icons grey">add</i>
         </a>
 
-      </div>
-            
+    </div>
+
 
 
 
