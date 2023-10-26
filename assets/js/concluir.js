@@ -10,5 +10,6 @@ function concluir(id){
     // salvar no localstorage
     localStorage.setItem("tarefas", JSON.stringify(tarefas))
     
-    atualiazar()
+    atualizar()
+    calcularEstatisticas()
 }

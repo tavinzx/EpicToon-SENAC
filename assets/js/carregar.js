@@ -1,6 +1,6 @@
-window.addEventListener("load", atualiazar)
+window.addEventListener("load", atualizar)
 
-function atualiazar(){
+function atualizar(){
         document.querySelector("#lista-tarefas").innerHTML = ""
         let tarefas = JSON.parse(localStorage.getItem("tarefas")) || []
         tarefas.forEach(tarefa=> criarCard(tarefa))
@@ -23,7 +23,7 @@ function criarCard(tarefa){
                             <i class="material-icons"> delete </i>
                         </a>
                         <a href="#" class="btn green" onClick="concluir(${tarefa.id})"> 
-                            <i class="material-icons"> check </i>
+                            <i class="material-icons"> thumb_up </i>
                         </a>
                     </div>
                 </div>
