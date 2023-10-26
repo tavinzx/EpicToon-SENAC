@@ -1,8 +1,7 @@
 
 function calcularEstatisticas(){
     const tarefas = JSON.parse(localStorage.getItem("tarefas")) || []
-    const pendentes = tarefas.filter(t => t.concluida == false)
-    const qtdePendente = pendentes.length 
+    const qtdePendente = tarefas.length 
     console.log(qtdePendente)
     document.querySelector("#qtde-pendente").innerHTML = qtdePendente
 
